@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.outer--about-avatar {
+  width: 15%;
+  margin-right: 10px;
+  min-width: 210px;
+}
+
+.outer--about-text {
+  width: 55%;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media only screen and (max-width: 1640px) {
+  .outer--about-text {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1603px) {
+  .outer--about-avatar {
+    width: 19%;
+  }
+}
+
+@media only screen and (max-width: 1218px) {
+  .outer--about-avatar {
+    width: 23%;
+  }
+}
+
+@media only screen and (max-width: 1176px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .outer--about-text {
+    margin-top: 10px;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .outer--about-text {
+    width: 80%;
+  }
+}

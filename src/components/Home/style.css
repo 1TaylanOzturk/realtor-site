@@ -1,0 +1,140 @@
+/* Jumbotron */
+.jumbotron-container {
+  margin-bottom: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.jumbotron-title {
+  font-weight: 800;
+  font-size: 3.5rem;
+  letter-spacing: -0.2rem;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.jumbotron-body {
+  text-align: center;
+  width: 70%;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+  margin-top: 5px;
+  margin-bottom: 1rem;
+  font-family: "Anek Malayalam", sans-serif;
+}
+
+/* Realtor */
+.inner--realtor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.realtor-img {
+  width: 50%;
+  max-width: 200px !important;
+}
+
+.realtor-bio {
+  font-family: "Anek Latin", sans-serif;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.realtor--bio-title {
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.realtor-content {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Element (which is actually an instruction informing user about what the site contains) */
+.outer--element-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+
+.element-container {
+  text-align: center;
+}
+
+.element-description {
+  line-height: 1.2;
+  max-width: 300px;
+}
+
+.element-title {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.keyhouse-img {
+  max-width: 300px;
+}
+
+.renthouse-img {
+  max-width: 160px;
+}
+
+.consultant-img {
+  max-width: 240px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 930px) {
+  .jumbotron-title {
+    font-size: 2.6rem;
+  }
+  .jumbotron-body {
+    width: 80%;
+  }
+  .realtor-bio {
+    width: 80%;
+  }
+  .jumbotron-footer button {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .jumbotron-footer button {
+    font-size: 25px;
+  }
+  .realtor-bio {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1016px) {
+  .jumbotron-body {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .outer--element-container {
+    flex-direction: column;
+  }
+  .element-container {
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .keyhouse-img {
+    width: 250px;
+  }
+  .renthouse-img {
+    width: 130px;
+  }
+  .consultant-img {
+    width: 220px;
+  }
+}

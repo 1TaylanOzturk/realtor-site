@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin-bottom: 3rem;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+button {
+  font-weight: bold !important;
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

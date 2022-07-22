@@ -1,0 +1,16 @@
+.outer--nav-links * {
+  color: black !important;
+  text-transform: uppercase;
+  line-height: 1.375;
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+}
+
+.outer--nav-links *:hover {
+  opacity: 0.75;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: .875rem;
+}
