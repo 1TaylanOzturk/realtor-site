@@ -9,6 +9,9 @@ const API = process.env.REACT_APP_API;
 function Portfolios() {
   const [adverts, setAdverts] = useState([]);
   const { t } = useTranslation();
+  const readableInt = (int) => {
+    return int.toLocaleString().replaceAll(",", ".")
+  }
 
   useEffect(() => {
     axios.get(API).then((res) => setAdverts(res.data));
@@ -21,12 +24,12 @@ function Portfolios() {
           return (
             <Card className="advert" key={data.title}>
               <Card.Header className="advert-header">
-                <Card.Img src={data.image} alt={"advert.png"} />
+                <Card.Img src={data.image} alt={"advert.jpg"} />
               </Card.Header>
               <Card.Body>
                 <Card.Title>{data.title}</Card.Title>
                 <Card.Subtitle className="advert-price mb-2">
-                  {data.price}₺
+                  {readableInt(data.price)}₺
                 </Card.Subtitle>
                 <Card.Text>{data.description}</Card.Text>
                 <Button className="advert-btn" href={data.link} target="_blank">
