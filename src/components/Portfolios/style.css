@@ -16,6 +16,10 @@
   margin-bottom: 2rem;
 }
 
+.advert p {
+  white-space: pre-wrap;
+}
+
 .advert-btn {
   font-weight: bold !important;
   font-family: "Roboto Condensed", sans-serif !important;
